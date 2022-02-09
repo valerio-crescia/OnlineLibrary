@@ -1,0 +1,28 @@
+<div class="main-div">
+      <div *ngIf="jwt">
+        <form class="form" [formGroup]="form" (ngSubmit)="submit()" *ngIf="(book$ | async) as book">
+          <h2>{{book.titolo}}</h2>
+          <h2>Price : {{book.price}} euro</h2>
+          <h3>informazioni Pagamento</h3>
+          <mat-form-field class="form-element">
+            <input type="text" matInput placeholder="Intestatario Carta" formControlName="cardHolder">
+          </mat-form-field>
+          <mat-form-field class="form-element">
+            <input type="text" matInput placeholder="Codice Carta" formControlName="cardNumber">
+          </mat-form-field>
+          <mat-form-field class="form-element">
+            <input type="number" matInput placeholder="Numero Segreto Carta" formControlName="cardSecretCode">
+          </mat-form-field >
+          <h3>Informazioni Spedizioni</h3>
+          <mat-form-field class="form-element">
+            <input type="text" matInput placeholder="Mittente" formControlName="recipient">
+          </mat-form-field>
+          <mat-form-field class="form-element">
+            <input type="text" matInput placeholder="Indirizzo Mittente" formControlName="address">
+          </mat-form-field>
+          <div class="form-element">
+            <button mat-raised-button color="primary" class="button" type="submit">Compra</button>
+          </div>
+        </form>
+      </div>
+</div>

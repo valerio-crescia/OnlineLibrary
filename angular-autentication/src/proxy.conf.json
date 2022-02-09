@@ -1,0 +1,21 @@
+
+{
+  "/AuthService1/*": {
+    "target": "http://localhost:8080",
+    "secure": "false",
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/BookServiceProsumer/*": {
+    "target": "http://localhost:8080",
+    "secure": "false",
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/BookShopProsumer/*": {
+    "target": "http://localhost:8080",
+    "secure": "false",
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

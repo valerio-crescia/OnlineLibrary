@@ -1,0 +1,25 @@
+<div class="main-div">
+  <div class="bookAndReview-container" *ngIf="(bookAndReviews$ | async) as bookAndReviews">
+    <div class="book-container" >
+     <h1>{{bookAndReviews.book.titolo}}</h1>
+      <h2>Autore: {{bookAndReviews.book.autore}}</h2>
+      <h2>Anno Pubblicazione: {{bookAndReviews.book.annoPubblicazione}}</h2>
+      <h2>ISBN: {{bookAndReviews.book.isbn}}</h2>
+      <h2>Numero Copie: {{bookAndReviews.book.numeroCopieDisponibili}}</h2>
+      <h2>Prezzo: {{bookAndReviews.book.price}}</h2>
+      <button mat-raised-button color="primary"  (click)="gotoBuyForm(bookAndReviews.book)">Compra</button>
+    </div>
+    <h1>Recensioni</h1>
+    <mat-card class="book-card" *ngFor="let review of bookAndReviews.reviews">
+      <mat-card-header>
+        <mat-card-title>{{review.autorUsername}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{review.text}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

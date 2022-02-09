@@ -1,0 +1,24 @@
+{
+	"resourcePackages": ["it.univaq.sose.bookservice.api"],
+	"prettyPrint": true,
+	"cacheTTL": 0,
+	"openAPI": {
+		"info": {
+			"version": "1.0.0",
+			"title": "BookServive",
+			"description": "Service for movies info",
+			"contact": {"email": "cxf-dev@apache.org"},
+			"license": {
+				"name": "Apache 2.0",
+				"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+			}
+		},
+		"servers": [
+			{
+				"url": "http://localhost:8080/BookServiceProsumer/rest",
+				"description": "MovieService, REST version"
+			}
+		]
+	},
+	"userDefinedOptions": {"support.swagger.ui": true}
+}

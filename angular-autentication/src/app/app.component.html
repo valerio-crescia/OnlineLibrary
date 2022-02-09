@@ -1,0 +1,7 @@
+<mat-toolbar>
+  <span>Libreria Online</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button *ngIf="(islogged$ | async)"  (click)="logout()" color="primary">Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>
+

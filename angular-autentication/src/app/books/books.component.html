@@ -1,0 +1,13 @@
+<div class="main-div">
+  <div class="card-container">
+    <mat-card (click)="gotoBook(book)" class="book-card" *ngFor="let book of books$ | async">
+      <mat-card-header>
+        <mat-card-title>{{book.titolo}}</mat-card-title>
+        <mat-card-subtitle>{{book.autore}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <span>{{book.price}} euro</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
