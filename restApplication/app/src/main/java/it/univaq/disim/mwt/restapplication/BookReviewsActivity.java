@@ -125,9 +125,11 @@ public class BookReviewsActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         soapObjects.clear();
-                        soapObjects.addAll(result);
-                        Log.d(TAG, "Size: " + soapObjects.size());
+                        if(result != null) {
+                            soapObjects.addAll(result);
+                        }
                         adapter.notifyDataSetChanged();
+
                     }
                 });
 
