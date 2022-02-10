@@ -1,8 +1,5 @@
 package it.univaq.sose.authservice.repository;
 
-import java.util.List;
-
-import javax.swing.DefaultRowSorter;
 
 import it.univaq.sose.authservice.domain.User;
 

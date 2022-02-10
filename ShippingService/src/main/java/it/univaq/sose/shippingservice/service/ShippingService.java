@@ -2,7 +2,6 @@ package it.univaq.sose.shippingservice.service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 import it.univaq.sose.shippingservice.domain.Shipment;

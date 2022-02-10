@@ -34,7 +34,6 @@ public class BookService {
 		String url = String.format(URL_BOOK_DISPONIBILITY, String.valueOf(id));
 		try {
 			URL obj = new URL(url);
-			//System.out.println(url);
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 			con.setRequestMethod("GET");
 			int responseCode = con.getResponseCode();
@@ -75,7 +74,6 @@ public class BookService {
 		String url = String.format(URL_BOOK_SELL, String.valueOf(id));
 		try {
 			URL obj = new URL(url);
-			//System.out.println(url);
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 			con.setRequestMethod("GET");
 			int responseCode = con.getResponseCode();

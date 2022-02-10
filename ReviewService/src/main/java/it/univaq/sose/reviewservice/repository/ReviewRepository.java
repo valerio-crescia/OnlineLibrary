@@ -28,11 +28,11 @@ public class ReviewRepository {
 		new Review(8,3,"Mario","Libro non granche'"), 
 	};
 	
-	// private default constructor
+	
 	private ReviewRepository() {
 		
 	}
-	// make the singleton instance
+	
 	public static ReviewRepository getInstance() {
         if(INSTANCE == null) {
             INSTANCE = new ReviewRepository();

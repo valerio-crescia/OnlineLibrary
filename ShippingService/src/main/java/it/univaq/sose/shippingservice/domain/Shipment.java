@@ -1,7 +1,6 @@
 package it.univaq.sose.shippingservice.domain;
 
 import java.util.Date;
-import java.util.Objects;
 
 import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "shipment")

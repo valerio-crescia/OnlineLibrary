@@ -28,8 +28,7 @@ public class ShippingSoapApiImpl implements ShippingSoapApi {
 		return null;
 	}
 
-	public Future<?> createShippingAsync(final CreateShippingRequest request,
-			final AsyncHandler<CreateShippingResponse> asyncHandler) {
+	public Future<?> createShippingAsync(final CreateShippingRequest request, final AsyncHandler<CreateShippingResponse> asyncHandler) {
 		final ServerAsyncResponse<CreateShippingResponse> asyncResponse = new ServerAsyncResponse<CreateShippingResponse>();
 		new Thread() {
 			public void run() {

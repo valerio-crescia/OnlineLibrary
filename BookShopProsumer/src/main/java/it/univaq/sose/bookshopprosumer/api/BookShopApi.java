@@ -29,7 +29,7 @@ public interface BookShopApi {
 	@POST
 	@Produces({ "application/xml", "application/json" })
 	@Consumes({ "application/xml", "application/json" })
-	public boolean buy(@RequestBody(description = "Cazzzozozozzoo", required = true, content = {
+	public boolean buy(@RequestBody(description = "Form to buy book", required = true, content = {
 			@Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = RequestBuyDTO.class)),
 			@Content(mediaType = MediaType.APPLICATION_XML, schema = @Schema(implementation = RequestBuyDTO.class))
 

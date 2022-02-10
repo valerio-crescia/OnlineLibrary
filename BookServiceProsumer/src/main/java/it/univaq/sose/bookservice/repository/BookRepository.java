@@ -52,7 +52,7 @@ public class BookRepository {
 				return book;
 			}
 		}
-		throw new BusinessException("Book not found1");
+		throw new BusinessException("Book not found");
 	}
 
 	public void updateBook(Book book) throws BusinessException {
@@ -68,6 +68,6 @@ public class BookRepository {
 				return;
 			}
 		}
-		throw new BusinessException("Book not found2");
+		throw new BusinessException("Book not found");
 	}
 }

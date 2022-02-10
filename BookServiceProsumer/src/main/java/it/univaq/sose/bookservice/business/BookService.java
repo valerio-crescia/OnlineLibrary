@@ -70,7 +70,6 @@ public class BookService {
 		GetReviewsByBook request = new GetReviewsByBook();
 		request.setIdBook(id);
 
-		//System.out.println(formatter.format(new Date()) + " - invoking sendMessageWithReturnAsync(request) ...");
 		Response<GetReviewsByBookResponse> response = port.getReviewsByBookAsync(request);
 		while (!response.isDone()) {
 		

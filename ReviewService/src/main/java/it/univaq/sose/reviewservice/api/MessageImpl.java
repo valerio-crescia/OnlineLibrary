@@ -34,7 +34,7 @@ public class MessageImpl implements Message {
 
 	@Override
 	public Future<?> getReviewsByBookAsync(int idbook, AsyncHandler<GetReviewsByBookResponse> asyncHandler) {
-		System.out.println("MessageImpl - getReviewsByFilmAsync(" + idbook + asyncHandler +")");
+		System.out.println("MessageImpl - getReviewsByBookAsync(" + idbook + asyncHandler +")");
 		final ServerAsyncResponse<GetReviewsByBookResponse> asyncResponse = new ServerAsyncResponse<GetReviewsByBookResponse>();
 		new Thread() {
 			public void run() {
