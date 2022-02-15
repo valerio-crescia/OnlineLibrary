@@ -40,7 +40,6 @@ export class LoginComponent implements OnInit {
           (auth: Auth) => {
             this.authService.LoginSucces(auth)
             this.gotoBooks()
-
           })
 
     }

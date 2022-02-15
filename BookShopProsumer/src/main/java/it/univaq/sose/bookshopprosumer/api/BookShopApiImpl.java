@@ -21,7 +21,7 @@ public class BookShopApiImpl implements BookShopApi {
 
 		} catch (ServiceException e) {
 			e.printStackTrace();
-			throw new WebApplicationException(Status.NO_CONTENT);
+			throw new WebApplicationException(e.getMessage(), Status.BAD_REQUEST);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 			throw new WebApplicationException(Status.INTERNAL_SERVER_ERROR);

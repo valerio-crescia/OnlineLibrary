@@ -115,8 +115,7 @@ public class BookReviewsActivity extends AppCompatActivity {
 
                 HttpTransportSE transport = new HttpTransportSE(WSDL_URL);
 
-                Log.i(TAG, "Invoking the " + METHOD_NAME + "operation");
-                Log.i(TAG, "Asking the reviews for the book with id '" + bookid + "'");
+
                 transport.call(SOAP_ACTION, soapEnvelope);
                 Vector<SoapObject> result = (Vector<SoapObject>) soapEnvelope.getResponse();
                 Log.i(TAG, "Response received: '" + result + "'");
@@ -127,8 +126,10 @@ public class BookReviewsActivity extends AppCompatActivity {
                         soapObjects.clear();
                         if(result != null) {
                             soapObjects.addAll(result);
+
                         }
                         adapter.notifyDataSetChanged();
+
 
                     }
                 });

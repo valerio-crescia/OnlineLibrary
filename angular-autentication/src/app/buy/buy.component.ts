@@ -70,6 +70,7 @@ export class BuyComponent implements OnInit {
     const val = this.form.value;
     console.log(val);
     this.shopService.buy(val).subscribe(result => {
+      console.log(result);
       this.router.navigate([`/books`]);
     })
   }

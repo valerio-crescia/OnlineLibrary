@@ -57,8 +57,13 @@ public class ShopService {
 				request.getCardSecretCode(), request.getAmount());
 
 		while (!(payCall.isDone())) {
-
+			
 		}
+		
+		if(payCallback.getTransactionReferenceNumber()==null) {
+			throw new ServiceException("Transazione errata");
+		}
+		
 		String trn = payCallback.getTransactionReferenceNumber();
 		// sell and shipping
 		SellCallback sellCallback = new SellCallback();
