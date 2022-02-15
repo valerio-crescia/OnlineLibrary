@@ -10,3 +10,5 @@ This is repository for SOSE exam
    - restApplication
 3. Web Application:
    - angular-autentication
+4. Documentation:
+   - SOSE Project Documentation
